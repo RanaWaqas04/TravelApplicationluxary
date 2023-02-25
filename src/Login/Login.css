@@ -13,13 +13,8 @@
     width: 100% !important;
     font-weight: 600;
 }
-.form {
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.maxWidth {
+   max-width: 50%;
 }
 .already-account{
     margin-top: 10px;
