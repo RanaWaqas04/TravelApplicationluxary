@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
-// import firebaseConfig from "./firebase.config.js";
+import firebaseConfig from "./firebase.config.js";
 
-const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
+// const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
 const initializeAuthentication = () => {
     initializeApp(firebaseConfig);
 }
