@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ServicesList from '../ServicesList/ServicesList';
 import './PrivateTwo.css';
 
