@@ -4,11 +4,7 @@ const Services = () => {
 
     const [services, setServices] = useState([])
 
-    useEffect(() =>
-        fetch('https://travel-insider-sajidmahamud835.herokuapp.com/services')
-            .then(res => res.json())
-            .then(data => setServices(data.services))
-        , [])
+
 
     const fiteredData = [];
     services.map(service => fiteredData.push(service));

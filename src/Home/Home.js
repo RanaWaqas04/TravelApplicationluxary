@@ -8,16 +8,7 @@ const Home = () => {
 	const [services, setServices] = useState([])
 	const [pageCount, setPageCOunt] = useState(0);
 
-	useEffect(() =>
-		fetch('https://travel-insider-sajidmahamud835.herokuapp.com/services')
-			.then(res => res.json())
-			.then(data => {
-				setServices(data.services);
-				const count = data.count;
-				const pageNumber = Math.ceil(count / 10);
-				setPageCOunt(pageNumber);
-			})
-		, [])
+	
 	const fiteredData = [];
 	services.map(service => fiteredData.push(service));
 	let filteredService = fiteredData.filter(service => service._id !== "6195ffe27a4f53f3360c7354");

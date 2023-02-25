@@ -20,23 +20,6 @@ const Details = () => {
   }
 
 
-  useEffect(() =>
-    fetch("https://travel-insider-sajidmahamud835.herokuapp.com/services")
-      .then(res => res.json())
-      .then(data => setDetails(data.services))
-    , [])
-
-
-  useEffect(() => {
-    if (details.length > 0) {
-      const matchedData = details.find(detail => detail._id === id)
-      setSpecificDetail(matchedData);
-    }
-
-  }
-
-    , [details, id])
-
   // function confirmInput() {
   //   alert("Thank you for your order!");
   // }
